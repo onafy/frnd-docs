@@ -1,0 +1,79 @@
+{
+  "label": "Settings",
+  "navbar": [
+    {
+      "label": "Guides",
+      "link": "doc",
+      "docLink": "docs/intro.mdx",
+      "position": "left"
+    },
+    {
+      "label": "What's New",
+      "link": "blog",
+      "position": "left"
+    },
+    {
+      "label": "AskFrnd",
+      "link": "external",
+      "externalLink": "https://frnd.io",
+      "position": "right"
+    },
+    {
+      "label": "GitHub",
+      "link": "external",
+      "externalLink": "https://github.com/onafy/frnd-docs",
+      "position": "right"
+    }
+  ],
+  "logo": {
+    "alt": "frndOS Help Center",
+    "src": "/img/logo.svg"
+  },
+  "title": "frndOS Help Center",
+  "footer": {
+    "style": "dark",
+    "links": [
+      {
+        "title": "Help Center",
+        "items": [
+          {
+            "label": "Getting Started",
+            "to": "docs/intro.mdx",
+            "_template": "internal"
+          },
+          {
+            "label": "What's New",
+            "_template": "blog"
+          }
+        ]
+      },
+      {
+        "title": "frndOS",
+        "items": [
+          {
+            "label": "Back to frndOS",
+            "href": "https://frnd.io",
+            "_template": "external"
+          },
+          {
+            "label": "AskFrnd",
+            "href": "https://frnd.io",
+            "_template": "external"
+          }
+        ]
+      },
+      {
+        "title": "More",
+        "items": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/onafy/frnd-docs",
+            "_template": "external"
+          }
+        ]
+      }
+    ],
+    "copyright": "frnd. Built with Docusaurus + TinaCMS."
+  },
+  "url": "https://help.frnd.io"
+}

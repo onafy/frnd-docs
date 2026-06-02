@@ -1,0 +1,95 @@
+{
+  "label": "Docs Sidebar",
+  "items": [
+    {
+      "document": "docs/intro.mdx",
+      "label": "Welcome",
+      "_template": "doc"
+    },
+    {
+      "title": "🚀 Getting Started",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/getting-started/welcome.mdx",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/getting-started/account-setup.mdx",
+          "_template": "doc"
+        },
+        {
+          "document": "docs/getting-started/your-first-brand.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "🏢 Brand Settings",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/brand-settings/overview.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "📝 Creative Brief",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/creative-brief/overview.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "🎨 Studio",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/studio/overview.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "📊 Insights",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/insights/overview.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "💬 AskFrnd",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/askfrnd/overview.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    },
+    {
+      "title": "👤 Account & Settings",
+      "link": "generated",
+      "items": [
+        {
+          "document": "docs/account-settings/overview.mdx",
+          "_template": "doc"
+        }
+      ],
+      "_template": "category"
+    }
+  ]
+}
