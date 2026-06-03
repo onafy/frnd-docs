@@ -110,9 +110,12 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       (() => {
+        const productionBaseUrl = process.env.VERCEL_URL
+          ? `https://${process.env.VERCEL_URL}`
+          : docusaurusData.url;
         const adminBaseUrl =
           process.env.NODE_ENV === "production"
-            ? docusaurusData.url
+            ? productionBaseUrl
             : `http://localhost:${process.env.PORT || 3333}`;
         return {
           docs: {
