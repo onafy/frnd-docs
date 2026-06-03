@@ -97,10 +97,9 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "id",
-    locales: ["id", "en"],
+    defaultLocale: "en",
+    locales: ["en"],
     localeConfigs: {
-      id: { label: "Bahasa Indonesia", direction: "ltr", htmlLang: "id-ID" },
       en: { label: "English", direction: "ltr", htmlLang: "en-US" },
     },
   },
@@ -161,15 +160,9 @@ const config = {
           src: docusaurusData?.logo?.src || "img/logo.svg",
           srcDark: docusaurusData?.logo?.srcDark || docusaurusData?.logo?.src || "img/logo.svg",
         },
-        items: [
-          ...docusaurusData.navbar.map((item) => {
-            return formatNavbarItem(item);
-          }),
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-        ],
+        items: docusaurusData.navbar.map((item) => {
+          return formatNavbarItem(item);
+        }),
       },
       footer: {
         style: docusaurusData.footer?.style || "dark",

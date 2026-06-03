@@ -1,7 +1,7 @@
 {
   "label": "Homepage",
   "title": "frndOS Help Center",
-  "description": "Panduan, tutorial, dan FAQ untuk semua modul frndOS — guides, AI-powered Q&A via AskFrnd, dan changelog selalu up-to-date.",
+  "description": "Guides, tutorials, and FAQs for every frndOS module — plus AI-powered Q&A via AskFrnd and an always up-to-date changelog.",
   "blocks": [
     {
       "title": "Welcome to frndOS Help Center",
@@ -14,18 +14,18 @@
       "items": [
         {
           "title": "Searchable",
-          "description": "Cari jawaban cepat lintas guides dan changelog dengan keyword apa pun — tekan ⌘K dari mana saja.",
-          "image": "/img/feature-search.svg"
+          "description": "Find answers fast across every guide and changelog entry — press ⌘K from anywhere on the site.",
+          "image": "/img/undraw_docusaurus_mountain.svg"
         },
         {
-          "title": "Bilingual",
-          "description": "Semua artikel tersedia dalam Bahasa Indonesia dan English — switch via dropdown di kanan atas.",
-          "image": "/img/feature-bilingual.svg"
+          "title": "Always Up to Date",
+          "description": "What's New keeps you informed of every product change — from new features to improvements and deprecations.",
+          "image": "/img/undraw_docusaurus_tree.svg"
         },
         {
           "title": "AI-Powered",
-          "description": "Tanya AskFrnd langsung di dalam frndOS — AI assistant yang paham brand, tools, dan product usage.",
-          "image": "/img/feature-ai.svg"
+          "description": "Ask AskFrnd directly inside frndOS — an AI assistant that understands your brand, tools, and product usage.",
+          "image": "/img/undraw_docusaurus_react.svg"
         }
       ],
       "_template": "features"
