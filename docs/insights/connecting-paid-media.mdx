@@ -1,0 +1,115 @@
+---
+title: Connecting Paid Media (Meta & TikTok Ads)
+sidebar_position: 2
+description: Connect your Meta Business and TikTok Ads accounts to frndOS Insights via OAuth — no manual access sharing required.
+---
+
+# Connecting Paid Media
+
+Paid Media in Insights tracks performance from your advertising platforms. Currently supported:
+
+- **Meta Business** (Facebook & Instagram Ads)
+- **TikTok Ads**
+
+The connection flow uses **OAuth** — you grant frndOS access using your own platform login, no need to share credentials or manage individual user access.
+
+## Before You Start
+
+You need:
+- **Login access** to the ad account you want to connect (Meta Business or TikTok Ads Manager)
+- **Full access** role for the brand in frndOS (view-only users cannot connect data)
+- The correct brand selected in the **top-left brand selector**
+
+## How to Connect Meta Business
+
+### Step 1 — Open the Connection Flow
+
+1. Log in to **frndOS** and select your brand
+2. Navigate to **Insights → Paid Media**
+3. Click **Connect** and choose **Meta Business**
+
+### Step 2 — Authorize Access
+
+You'll be redirected to Facebook to grant frndOS access to your account.
+
+After authorizing, you'll see a list of **ad accounts** you have access to. Select the one you want to connect.
+
+### Step 3 — Wait for Sync
+
+After selection:
+1. Status changes to **Setting up**
+2. Then **Syncing**
+3. Finally **Connected**
+
+Sync time depends on data volume. Initial sync may take a while; subsequent daily syncs are faster.
+
+## How to Connect TikTok Ads
+
+The flow is similar to Meta:
+
+1. From Insights → Paid Media, click **Connect** → **TikTok Ads**
+2. Authorize via TikTok Ads Manager
+3. Select the ad account
+4. Wait for sync to complete
+
+> **Note:** TikTok Ads has known platform-specific issues that occasionally surface. If a connection fails, try again or reach out to support.
+
+## Important Notes & Limitations
+
+### One Connection Per Platform Per Brand (Current State)
+
+Currently, each brand supports:
+- **One** Meta Business connection
+- **One** TikTok Ads connection
+
+If you have multiple ad accounts under one brand, you can only connect one at a time. **Multi-account support is in development.**
+
+### TikTok: Organic + Paid Data Mix
+
+When you connect TikTok at the account level, **organic and paid data are mixed** (TikTok doesn't always cleanly separate them at the API level, unlike Meta).
+
+### X (Twitter) Not Yet Supported
+
+X is not currently supported. It requires a custom developer integration and is on the future roadmap.
+
+## After Connection
+
+Once connected, your Paid Media dashboard will populate with:
+
+- Impressions, reach, engagement, spend (per platform)
+- Funnel filtering (Awareness, Consideration, Conversion, EV)
+- Time-based filtering (default: last 3 months)
+- Per-campaign breakdowns (via the Campaign tab)
+
+## Reconnecting or Removing a Connection
+
+To **remove a connection**:
+1. Go to Paid Media settings
+2. Find the connected account
+3. Click **Remove**
+
+To **reconnect** (e.g., after revoked access):
+1. Remove the existing connection
+2. Run the connection flow again
+
+## Troubleshooting
+
+**Problem: My ad accounts don't appear after authorizing.**
+Possible causes:
+- Your platform login doesn't have access to the ad account
+- Permissions changed recently on the platform side
+- The connection has cached older session data — try removing and reconnecting
+
+**Problem: Connection stuck at "Setting up" for a long time.**
+This can happen on initial sync due to data volume. Wait, or contact support if it persists more than a few hours.
+
+**Problem: I can only see "View only" — no Connect button.**
+You don't have Full Access for this brand. Contact your workspace admin to upgrade your role.
+
+---
+
+## Related Articles
+
+- [Insights Overview](./overview)
+- [Connecting Owned Media](./connecting-owned-media)
+- [Connecting Earned Media & ATL](./connecting-earned-atl)

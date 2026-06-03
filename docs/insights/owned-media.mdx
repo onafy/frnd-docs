@@ -1,0 +1,152 @@
+---
+title: Understanding Owned Media & Content Labels
+sidebar_position: 5
+description: Tag your owned media posts with custom attributes — campaign, pillar, content tower — to unlock richer filtering and campaign-level reporting.
+---
+
+# Understanding Owned Media & Content Labels
+
+After connecting your Owned Media accounts, frndOS pulls in your posts with default metrics (views, comments, likes, shares). But to truly understand **which campaigns drove what performance**, you need to add **content labels**.
+
+This is one of the most powerful features in Insights — and it's what unlocks campaign-level reporting, content pillar analysis, and funnel funneling.
+
+## Why Tag Your Posts?
+
+By default, Owned Media gives you raw post data. With tagging, you can:
+
+- **Filter posts by campaign** — see all posts from Campaign X across platforms
+- **Analyze by content pillar** — which pillar is performing best?
+- **Group by objective** — awareness vs. consideration vs. conversion content
+- **Build campaign reports** — automatically aggregate metrics for tagged campaigns
+
+> **Standard recommendation:** Most brands tag at minimum by **Campaign**, **Content Pillar**, and **Objective**. These are the building blocks for proper funnel reporting.
+
+## How Tagging Works
+
+Tagging in Owned Media has two layers:
+
+1. **Attributes** — the labels themselves (e.g., "Campaign", "Pillar", "Objective")
+2. **Values** — what each post gets tagged with (e.g., Campaign = "Summer Launch")
+
+You define attributes once, then apply them to posts.
+
+## Defining Custom Attributes
+
+### Step 1 — Open Attribute Settings
+
+1. Navigate to **Insights → Owned Media**
+2. Go to the **Tagging** section (or post table view)
+3. Find **Attributes → Add New Attribute**
+
+### Step 2 — Configure the Attribute
+
+Set up the new attribute:
+
+| Field | Description |
+|---|---|
+| **Name** | The label name (e.g., "Pillar", "Campaign", "Objective") |
+| **Default Value** | Optional starting value applied to new posts |
+| **Type** | `Single Select` (with defined options) or `Text` (free-form) |
+
+For **Single Select**, define the available options:
+- *Pillar 1, Pillar 2, Pillar 3* — values users can pick from
+- *Awareness, Consideration, Conversion* — for an Objective attribute
+
+For **Text**, users can type anything per post.
+
+### Step 3 — Save
+
+The new attribute appears as a new column in the Owned Media post table.
+
+## Applying Tags to Posts
+
+### Method 1 — Tag Individually
+
+1. Open the post row in the table
+2. Click the attribute cell
+3. Select or type the value
+
+### Method 2 — Bulk Tag
+
+For tagging many posts at once:
+
+1. Select multiple posts using checkboxes
+2. Choose **Bulk Tag** (or similar action)
+3. Select the attribute and value to apply
+4. Confirm
+
+Example: Select all posts from August, bulk-tag them with `Campaign = Summer Launch`.
+
+## Filtering by Tags
+
+Once posts are tagged, you can filter in powerful ways:
+
+### Filter by Specific Value
+*Example:* Show me all posts where `Campaign = Summer Launch`.
+
+### Filter by "Not Empty"
+*Example:* Show me only posts I've already tagged with a campaign (excludes untagged posts).
+
+### Combine Filters
+*Example:* `Pillar = Pillar 1` AND `Campaign = Summer Launch`.
+
+This is how you turn raw post data into campaign performance reports.
+
+## Recommended Tag Structure
+
+While you can define any attributes, certain labels are **strongly recommended** because they're useful across all brand reports:
+
+| Tag | Type | Why It Matters |
+|---|---|---|
+| **Campaign** | Single Select | Group posts under named campaigns |
+| **Content Pillar** | Single Select | Analyze performance by brand pillar |
+| **Objective** | Single Select | Map content to funnel stages (Awareness / Consideration / Conversion) |
+| **Sub-Campaign** | Single Select | Optional drill-down for big campaigns |
+
+> **Why these specifically?** They map directly to standard report structures (campaign reports, content pillar analysis, funnel reports). If you skip them, you lose the ability to build those views.
+
+## Working with Tags Across Time
+
+### Retroactive Tagging
+
+You can tag historical posts. Just open the post and apply the tag — useful for organizing pre-frndOS content that's been pulled in.
+
+### Some Old Posts May Have Missing Data
+
+Posts from before your initial connection may have **incomplete metrics** (e.g., missing views for static posts or carousels). This is a data source limitation, not a tagging issue. Tags still apply normally.
+
+## How Tags Power Campaign Reports
+
+Once your posts are tagged, the **Campaign tab** in Insights uses those tags to:
+
+- Auto-aggregate metrics per campaign
+- Generate filtered reports for stakeholders
+- Compare campaign vs. always-on performance
+
+👉 See: [Creating & Managing Campaigns in Insights](./campaigns)
+
+## FAQ
+
+**Q: What's the difference between Attributes and Tags?**
+- **Attribute** = the label category (e.g., "Campaign")
+- **Tag** = the actual value applied to a post (e.g., Campaign = "Summer Launch")
+
+**Q: Can I edit or delete an attribute later?**
+Yes. But deleting an attribute removes all associated tags from posts. Edit with caution.
+
+**Q: Can I bulk-tag posts that span multiple platforms?**
+Yes. Tags apply to posts regardless of source platform (Facebook, Instagram). You can bulk-tag a mixed selection.
+
+**Q: Do tags sync automatically across team members?**
+Yes. Tags are stored per brand, so any team member with brand access sees the same tags.
+
+**Q: Are there any default labels?**
+Currently, all attributes are custom. There's discussion about making Campaign, Content Pillar, and Objective **standard defaults** in the future — but right now you'll need to create them yourself.
+
+---
+
+## Related Articles
+
+- [Insights Overview](./overview)
+- [Connecting Owned Media](./connecting-owned-media)
+- [Creating & Managing Campaigns in Insights](./campaigns)

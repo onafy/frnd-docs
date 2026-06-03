@@ -1,19 +1,97 @@
 ---
 title: Insights Overview — Understanding Your Brand Data
-description: Brand monitoring, analytics, dan reporting.
 sidebar_position: 1
+description: Track brand performance across Paid Media, Owned Media, Earned Media, and ATL channels — all in one dashboard, per brand.
 ---
 
-# Insights
+# Insights Overview
 
-Insights memberikan view atas performance brand dan campaign-mu.
+**Insights** is the performance tracking pillar of frndOS. It brings together your brand's marketing performance data from multiple channels — Paid Media, Owned Media, Earned Media, and ATL — into a single dashboard.
 
-## Artikel di kategori ini
+Instead of jumping between platform-specific dashboards (Meta, TikTok, spreadsheets), Insights consolidates everything so you can see how your brand is performing across the funnel.
 
-- **Reading Trends & Signals**
-- **Creating & Managing Campaigns in Insights**
-- **Sharing Reports with Clients (Public Link)**
-- **Understanding Owned Media & Content Labels**
-- **Setting Up Insights KPIs**
+## How Insights is Organized
 
-[Placeholder — to be written by content author via TinaCMS]
+Insights data is structured around **four media types**, each as a separate tab:
+
+| Media Type | What It Tracks | Data Source |
+|---|---|---|
+| **Paid Media** | Ad performance across digital platforms | Direct connection (Meta, TikTok Ads) |
+| **Owned Media** | Organic social media performance | Direct connection (Facebook, Instagram) |
+| **Earned Media** | Influencer/PR coverage (non-owned mentions) | Google Sheets |
+| **ATL** | Above-the-line media (TV, print, OOH) | Google Sheets |
+
+Plus two cross-cutting views:
+
+- **Overview** — high-level summary across all media types
+- **Campaign** — filtered reporting for specific campaigns
+
+## Per-Brand Data
+
+Insights is **scoped per brand**. If you handle multiple brands:
+
+1. Create each brand separately in frndOS
+2. Connect data sources independently for each brand
+3. Switch between brands using the **brand selector** in the top-left
+
+👉 See: [Managing Multiple Brands](../brand-setup/multiple-brands)
+
+## The Funnel View
+
+Across the Paid Media dashboard (and increasingly other tabs), you can filter performance data by **funnel stage**:
+
+- **Awareness**
+- **Consideration**
+- **Conversion**
+- **EV** (Engagement Value, where applicable)
+
+This helps you see how each channel contributes at different stages of the customer journey.
+
+## What You'll See When You Start
+
+If you haven't connected any data sources yet, your dashboards will show **zero values**. This is expected.
+
+Once you connect **at least one data source** (e.g., one Paid Media platform or one Owned Media account), the Overview and relevant tabs will start populating.
+
+## Getting Started Checklist
+
+To start using Insights for your brand:
+
+1. ✅ **Connect Paid Media sources** → [Connecting Paid Media](./connecting-paid-media)
+2. ✅ **Connect Owned Media sources** → [Connecting Owned Media](./connecting-owned-media)
+3. ✅ **Connect Earned Media & ATL** (via Google Sheets) → [Connecting Earned Media & ATL](./connecting-earned-atl)
+4. ✅ **Tag your posts** for richer campaign reporting → [Understanding Owned Media & Content Labels](./owned-media)
+5. ✅ **Set up KPIs** for your brand's targets → [Setting Up Insights KPIs](./kpi-setup)
+
+## Data Sync Behavior
+
+- **Daily automatic sync** runs from **7 PM through early morning**
+- Sync includes deep data (e.g., comments on posts, not just top-line metrics)
+- **Manual force-sync** is available if you don't want to wait
+- Initial sync may take time depending on data volume (especially Facebook, where comments-of-comments are pulled)
+- A sync status indicator is visible per connection; check "last updated" timestamp to confirm freshness
+
+> **Note:** Sync completion notifications (to Lark or push) are not yet implemented. Check sync status manually for now.
+
+## FAQ
+
+**Q: Can I connect multiple ad accounts under one brand?**
+Currently, frndOS supports **one connection per platform per brand** (e.g., one Meta connection, one TikTok Ads connection). Multi-account support is in development.
+
+**Q: Why is my Overview tab showing zero?**
+You need to connect at least one data source. Once a connection succeeds, the Overview will populate.
+
+**Q: Is X (formerly Twitter) supported?**
+Not yet. X support requires a custom developer submission and is on the roadmap.
+
+**Q: Can I export data from Insights?**
+Excel export is supported. For deeper analysis, you can also query the data through AskFrnd (chat interface).
+
+---
+
+## Related Articles
+
+- [Connecting Paid Media](./connecting-paid-media)
+- [Connecting Owned Media](./connecting-owned-media)
+- [Connecting Earned Media & ATL](./connecting-earned-atl)
+- [Understanding Owned Media & Content Labels](./owned-media)

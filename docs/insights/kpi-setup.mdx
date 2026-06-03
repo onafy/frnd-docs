@@ -1,0 +1,87 @@
+---
+title: Setting Up Insights KPIs
+sidebar_position: 7
+description: Define your brand's KPI targets in Insights — what to track, what success looks like, and how source data maps to each metric.
+---
+
+# Setting Up Insights KPIs
+
+KPI Setup is where you define **what success looks like** for your brand's Insights dashboards — both the targets and the metrics that matter most.
+
+## Current State
+
+Right now, Insights uses **fixed KPI templates per tab**:
+
+- **Overview tab** — standard summary KPIs across all media types
+- **Paid Media tab** — paid-specific KPIs (impressions, reach, spend, etc.)
+- **Owned Media tab** — owned-specific KPIs (engagement, comments, etc.)
+- **Campaign tab** — campaign-aggregated KPIs
+
+For now, the only filter available is **data source** — you can switch which platform's data feeds the visible KPIs.
+
+## Setting KPI Targets
+
+To set targets for your brand:
+
+1. Navigate to **Insights → KPI Setup** (or the equivalent settings area)
+2. For each KPI, enter:
+   - **Target value** (e.g., 1M impressions/month)
+   - **Time period** (e.g., monthly, quarterly)
+3. Save
+
+Targets appear on your dashboards alongside actual performance, so you can track progress at a glance.
+
+## Per-Brand KPIs
+
+KPIs are configured **per brand**. If you manage multiple brands:
+
+- Each brand has its own KPI targets
+- Switching brands updates the KPI view
+- Targets don't carry over between brands (intentional — each brand has different goals)
+
+👉 See: [Managing Multiple Brands](../brand-setup/multiple-brands)
+
+## Coming Soon: Dynamic KPI Source Selection
+
+The next iteration will support **dynamic KPI configuration**:
+
+- Choose **which data source** feeds each KPI
+- Example: *"For 'Impressions', use only Owned Media data — not Paid"*
+- Example: *"For 'Spend', use only Paid Media"*
+
+Behind the scenes, the matching logic (metric ↔ source platform ↔ relevant tab) is being built. The UI is partly in place — the backend logic is the remaining piece.
+
+> **Status:** Planned. Current setup remains fixed per tab.
+
+## Some Metrics Are Tied to Specific Sources
+
+Note that not all KPIs apply to all sources:
+
+- **Ad spend** — only exists in Paid Media (no spend data from organic posts)
+- **Comments** — works for both Paid Media and Owned Media
+- **Reach** — varies by platform definition
+
+When dynamic source selection launches, frndOS will only let you assign metrics to sources where the data actually exists.
+
+## FAQ
+
+**Q: Why is KPI customization limited right now?**
+The system is being built incrementally. Fixed templates work for the most common cases first; dynamic customization comes in the next iteration.
+
+**Q: Can I add a brand new KPI not in the template?**
+Currently, KPIs are predefined per tab. Custom KPI definitions are part of the roadmap.
+
+**Q: Can I share KPIs across brands?**
+Not currently. Each brand maintains independent KPI targets.
+
+**Q: My brand's KPI focus is different from the default template. What should I do?**
+Two options:
+1. Use the closest match in the current template and ignore irrelevant KPIs
+2. Share feedback with the frndOS team — your use case may inform the upcoming dynamic KPI work
+
+---
+
+## Related Articles
+
+- [Insights Overview](./overview)
+- [Creating & Managing Campaigns in Insights](./campaigns)

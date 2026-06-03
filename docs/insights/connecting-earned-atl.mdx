@@ -1,0 +1,130 @@
+---
+title: Connecting Earned Media & ATL via Google Sheets
+sidebar_position: 4
+description: Bring Earned Media (influencer/PR) and ATL (TV, print, OOH) data into Insights using Google Sheets with defined range names.
+---
+
+# Connecting Earned Media & ATL via Google Sheets
+
+Some media types don't have direct API connections available — namely **Earned Media** (influencer/PR coverage) and **ATL** (TV, print, OOH). For these, frndOS uses **Google Sheets** as the data source.
+
+Programmatic ads can also use this flow when direct platform connections aren't available.
+
+## Before You Start
+
+You need:
+- A **Google Sheet** containing your Earned Media or ATL data
+- **Access** to that sheet via your Google account
+- Each tab/data range you want to import must have a **defined range name**
+- A clear table structure with consistent column headers
+
+## How the Google Sheets Connection Works
+
+The flow has three steps:
+
+1. **Authorize** Google access
+2. **Paste** the sheet URL — frndOS reads the defined range names
+3. **Map** columns from your sheet to frndOS fields
+
+frndOS uses **range names** (not entire sheet tabs) to identify which data ranges to pull. This gives you flexibility to keep multiple data sets in one sheet.
+
+## Step 1 — Prepare Your Sheet
+
+### Define a Range Name in Google Sheets
+
+1. Open your Google Sheet
+2. Select the data range you want to import (e.g., from column A to the last column, including the header row)
+3. Go to **Data → Named ranges** in Google Sheets
+4. Click **Add a range**
+5. Give it a meaningful name (e.g., `earn_beyondtelkom`, `atl_q2_data`)
+6. Confirm the range and save
+
+> **Tip:** Block the entire data area including the header row (e.g., A1 through AR1000) so future rows are automatically included on daily sync.
+
+### Use the frndOS Sample Sheet (Recommended)
+
+frndOS provides **sample sheets** with the standard column structure already defined. You can duplicate these to skip the range-naming step entirely.
+
+Ask your frndOS account representative for the sample sheet for your data type (Earned Media, ATL, or Programmatic).
+
+## Step 2 — Connect in frndOS
+
+1. Navigate to **Insights → Earned Media** (or **ATL**, depending on what you're connecting)
+2. Click **Connect** and choose **Google Sheets**
+3. **Authorize** Google account access
+4. **Paste the sheet URL**
+5. frndOS will fetch the available range names from your sheet
+
+## Step 3 — Map Columns
+
+After fetching, frndOS will show a **field mapping screen**:
+
+- **Left column** — Target fields that frndOS needs (some marked as **Required**)
+- **Right column** — Range names from your sheet, with available columns
+
+frndOS will **auto-map** fields based on column name similarity (e.g., a column named `impressions` in your sheet will auto-map to the `impressions` field in frndOS).
+
+### Manual Mapping
+
+If your column names don't match frndOS conventions, you can map them manually:
+
+1. Find the unmapped field
+2. Click the dropdown
+3. Select the corresponding column from your sheet
+
+### Required vs Optional Fields
+
+- **Required fields** must be mapped or the connection won't proceed
+- **Optional fields** can be left blank — frndOS will skip them
+
+## Step 4 — Save & Sync
+
+1. Click **Save Changes**
+2. frndOS triggers an initial sync using your column mapping
+3. Status moves to **Syncing** → **Connected**
+
+After this, data syncs **daily** along with your other connections.
+
+## Adding New Rows Later
+
+Once the range is set up, you don't need to reconnect when adding new data:
+
+1. Add new rows to your sheet within the defined range
+2. The daily sync will pick them up automatically
+3. No re-mapping required (as long as columns stay the same)
+
+## Use Case: Programmatic Ads via Sheets
+
+For **programmatic ads** (which don't have a direct platform connection), use the same Google Sheets flow:
+
+1. Maintain your programmatic data in a Google Sheet
+2. Use frndOS's Programmatic sample sheet for the standard column structure
+3. Connect via the Paid Media tab using the same Google Sheets flow
+
+## FAQ
+
+**Q: Do I need a separate sheet per data type?**
+Not necessarily — you can use one sheet with multiple defined range names. Each range name maps to a different data type (e.g., one range for Earned Media, another for ATL).
+
+**Q: What if my sheet's columns don't match frndOS's standard?**
+Use the manual mapping in Step 3. As long as all **Required** fields are mapped, your custom column structure is fine.
+
+**Q: How often does the data sync?**
+Daily, alongside other Insights connections (starts 7 PM, completes by early morning).
+
+**Q: Can I update past data?**
+Yes — edit your sheet, and the next sync will pull the updated values.
+
+**Q: What's the cutoff date for past data?**
+frndOS migrates historical data up to a defined cutoff (e.g., April 2025 for Telkomsel migration). For dates after the cutoff, you connect and maintain data yourself.
+
+**Q: Why use Sheets instead of direct integration?**
+For Earned Media and ATL, there's no standard API across all media types. Sheets is the most flexible format that works for influencer reports, agency-provided PR data, TV ratings, etc.
+
+---
+
+## Related Articles
+
+- [Insights Overview](./overview)
+- [Connecting Paid Media](./connecting-paid-media)
+- [Connecting Owned Media](./connecting-owned-media)

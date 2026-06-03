@@ -1,0 +1,115 @@
+---
+title: Connecting Owned Media (Facebook & Instagram)
+sidebar_position: 3
+description: Connect your brand's organic social media accounts to track post performance, comments, and engagement in Insights.
+---
+
+# Connecting Owned Media
+
+Owned Media in Insights tracks your brand's **organic social media performance** — posts, comments, reach, and engagement. Currently supported:
+
+- **Facebook Pages**
+- **Instagram Business Accounts**
+
+Like Paid Media, the connection uses **OAuth** for secure, credential-free access.
+
+## Before You Start
+
+You need:
+- **Admin access** to the social media account (Facebook Page or Instagram Business)
+- **Full access** role for the brand in frndOS
+- The correct brand selected from the top-left
+
+## How to Connect
+
+### Step 1 — Open Connection Flow
+
+1. Navigate to **Insights → Owned Media**
+2. Click **Connect** and choose the platform (Facebook or Instagram)
+
+### Step 2 — Authorize
+
+You'll be redirected to authorize via the platform's OAuth flow. After authorization, you'll see a list of pages or accounts you have access to.
+
+### Step 3 — Choose Account & Time Frame
+
+1. Select the **account** you want to connect (e.g., the Facebook Page or IG Business account)
+2. Choose a **time frame** for the historical data pull:
+   - 1 month back
+   - 3 months back (default)
+   - 6 months back
+   - 1 year back
+   - Custom range
+
+### Step 4 — Wait for Sync
+
+Connection status moves through:
+1. **Setting up**
+2. **Syncing** — this can take a while because frndOS pulls deep data including **all comments on posts**
+3. **Connected**
+
+> **Why does Facebook take longer?** Facebook syncs include comments-on-comments (nested comments), which makes the data pull deeper than Instagram.
+
+## What Data Gets Pulled
+
+Once connected, Owned Media tracks:
+
+| Default Metrics | Description |
+|---|---|
+| **Views** | Post views/impressions |
+| **Comments** | Including nested comments (Facebook) |
+| **Likes** | Reactions on posts |
+| **Shares** | Re-shares |
+
+You can extend this data with **custom tags and labels** per post — see [Understanding Owned Media & Content Labels](./owned-media).
+
+## Data Sync Behavior
+
+- **Daily automatic sync** runs from **7 PM through early morning**
+- Sync status is shown per connection (e.g., "Syncing" badge)
+- **Manual force-sync** available if you don't want to wait
+- Check **last updated** timestamp to confirm freshness
+- Removed connections clear from the dashboard
+
+## Multi-Platform Mixing
+
+When you connect both Facebook and Instagram under one brand, posts from both platforms appear together in the Owned Media tab, with platform indicators per row. This is intentional — you get a unified view of your owned content.
+
+## Reconnecting or Removing
+
+**To remove:**
+1. Open the connected account row
+2. Click **Remove**
+
+**To reconnect** (e.g., access revoked):
+1. Remove the existing connection
+2. Run the connection flow again
+
+## Troubleshooting
+
+**Problem: My Page/Account doesn't show in the list.**
+- Your Facebook account may not have admin access to the Page
+- For Instagram: the account must be a **Business** account linked to a Facebook Page
+- Try removing the existing frndOS connection and reconnecting
+
+**Problem: Connection succeeded but data isn't appearing.**
+- Initial sync can take time, especially for accounts with many posts
+- Check the sync status; if it's still "Syncing", wait
+- If it's "Connected" but empty, force a manual sync
+
+**Problem: Mixed data from wrong account.**
+If you previously connected a different account (e.g., during testing), data from that account may still be in your view. Remove the old connection completely to clean up.
+
+---
+
+## Next Steps
+
+After connecting Owned Media, the next powerful step is **tagging your posts** with custom attributes (campaign, pillar, content tower) for richer analysis:
+
+👉 [Understanding Owned Media & Content Labels →](./owned-media)
+
+## Related Articles
+
+- [Insights Overview](./overview)
+- [Connecting Paid Media](./connecting-paid-media)
+- [Connecting Earned Media & ATL](./connecting-earned-atl)
