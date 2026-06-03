@@ -157,12 +157,9 @@ const config = {
       navbar: {
         title: docusaurusData.title || "",
         logo: {
-          alt: docusaurusData?.logo?.alt
-            ? docusaurusData?.logo?.alt
-            : "My Logo",
-          src: docusaurusData?.logo?.src
-            ? docusaurusData?.logo?.src
-            : "img/logo.svg",
+          alt: docusaurusData?.logo?.alt || "Help Center",
+          src: docusaurusData?.logo?.src || "img/logo.svg",
+          srcDark: docusaurusData?.logo?.srcDark || docusaurusData?.logo?.src || "img/logo.svg",
         },
         items: [
           ...docusaurusData.navbar.map((item) => {

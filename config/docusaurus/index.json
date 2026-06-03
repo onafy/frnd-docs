@@ -11,25 +11,14 @@
       "label": "What's New",
       "link": "blog",
       "position": "left"
-    },
-    {
-      "label": "AskFrnd",
-      "link": "external",
-      "externalLink": "https://frnd.io",
-      "position": "right"
-    },
-    {
-      "label": "GitHub",
-      "link": "external",
-      "externalLink": "https://github.com/onafy/frnd-docs",
-      "position": "right"
     }
   ],
   "logo": {
     "alt": "frndOS Help Center",
-    "src": "/img/logo.svg"
+    "src": "/img/logo.png",
+    "srcDark": "/img/logo-dark.png"
   },
-  "title": "frndOS Help Center",
+  "title": "Help Center",
   "footer": {
     "style": "dark",
     "links": [
@@ -53,21 +42,6 @@
           {
             "label": "Back to frndOS",
             "href": "https://frnd.io",
-            "_template": "external"
-          },
-          {
-            "label": "AskFrnd",
-            "href": "https://frnd.io",
-            "_template": "external"
-          }
-        ]
-      },
-      {
-        "title": "More",
-        "items": [
-          {
-            "label": "GitHub",
-            "href": "https://github.com/onafy/frnd-docs",
             "_template": "external"
           }
         ]

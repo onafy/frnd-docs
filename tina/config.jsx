@@ -602,8 +602,14 @@ const SettingsCollection = {
         },
         {
           type: "image",
-          label: "Source",
+          label: "Source (Light mode)",
           name: "src",
+        },
+        {
+          type: "image",
+          label: "Source (Dark mode)",
+          name: "srcDark",
+          description: "Optional — shown when site is in dark mode. Falls back to light-mode source if empty.",
         },
       ],
     },
