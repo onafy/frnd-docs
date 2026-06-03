@@ -19,12 +19,12 @@
 
 /* Dark mode primary */
 [data-theme='dark'] {
-  --ifm-color-primary: #eff9fe;
-  --ifm-color-primary-dark: #c4e7f8;
-  --ifm-color-primary-darker: #b1ddf5;
-  --ifm-color-primary-darkest: #79c4ec;
-  --ifm-color-primary-light: #ffffff;
-  --ifm-color-primary-lighter: #ffffff;
-  --ifm-color-primary-lightest: #ffffff;
+  --ifm-color-primary: #6dbef9;
+  --ifm-color-primary-dark: #4aabf7;
+  --ifm-color-primary-darker: #38a2f6;
+  --ifm-color-primary-darkest: #0c87ec;
+  --ifm-color-primary-light: #90cffb;
+  --ifm-color-primary-lighter: #a2d7fb;
+  --ifm-color-primary-lightest: #d6ecfd;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
