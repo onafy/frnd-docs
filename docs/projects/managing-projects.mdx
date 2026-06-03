@@ -1,0 +1,118 @@
+---
+title: Creating & Managing Projects
+sidebar_position: 1
+description: Use Projects in frndOS to organize campaigns, briefs, and assets — and to override brand-level settings for specific campaigns.
+---
+
+# Creating & Managing Projects
+
+In frndOS, a **Project** is a container for everything related to a single campaign — the brief, the direction, and all the generated assets that come out of it.
+
+Every KV you create needs to live inside a Project. This is what gives the AI campaign-level context (beyond just brand-level Brand Knowledge).
+
+## When to Use Projects
+
+Create a new Project for:
+- A **new campaign** for a brand
+- A **specific deliverable** with its own brief and direction
+- Any work that needs **isolated context** from your brand's default settings
+
+## What's Inside a Project
+
+A Project holds:
+
+| Element | Purpose |
+|---|---|
+| **Project Brief** | Campaign-level direction (audience, tone, visual direction) |
+| **Project KVs** | All Key Visuals generated under this project |
+| **Project Settings** | Toggles for Brand Knowledge, custom tonality, etc. |
+
+## How to Create a Project
+
+1. Log in to **frndOS**
+2. Select the correct brand from the **top-left brand selector**
+3. Navigate to **Projects** in the main menu
+4. Click **Create Project**
+5. Fill in the **Project Brief**:
+   - **Target audience** for this specific campaign
+   - **Visual direction** and tone
+   - **Campaign objective** and messaging
+6. Configure project-level settings (Brand Knowledge toggle, custom tonality if needed)
+7. Save
+
+The Project is now ready to host your Key Visuals.
+
+## The Project Brief
+
+The Project Brief is the most important part of project setup. It gives the AI campaign-specific context that goes beyond your brand's default Brand Knowledge.
+
+**Recommended fields to fill in:**
+
+- **Audience** — who is this campaign for? (Can be different from brand-level audience)
+- **Visual direction** — mood, references, do's and don'ts
+- **Tone** — campaign-specific tonality if different from brand default
+- **Messaging** — core message or proposition
+
+> **The more you put in the Project Brief, the more on-target your AI generations will be.**
+
+## Overriding Brand Knowledge at the Project Level
+
+This is one of the most powerful features of Projects.
+
+By default, every project uses your brand's global Brand Knowledge (DNA, Identity, Tonality). But you can override at the project level:
+
+### Use Case 1 — Experimental Campaign
+
+Your brand normally has a formal, corporate tone. But this campaign targets Gen-Z with a bold, experimental direction.
+
+**How to override:**
+1. In Project settings, **disable the default Brand Knowledge** for this project
+2. In the Project Brief, **add a custom tonality** describing the experimental direction
+3. Generate KVs — they'll use the campaign-specific tonality, not the global one
+
+### Use Case 2 — Partial Override
+
+You want to keep your brand's visual identity but try a different communication tone for one campaign.
+
+**How to override:**
+1. Keep Brand Knowledge **enabled**
+2. In the Project Brief, **add a custom tonality** that complements the override
+3. The visual identity stays consistent; only the communication tone shifts
+
+> See [Setting Your Brand's Tone of Voice](../brand-setup/tone-of-voice.md) for more on tonality control.
+
+## How Projects Affect Generation
+
+Every KV generated under a project inherits:
+
+- **Brand Knowledge** (unless toggled off)
+- **Project Brief** context
+- **Custom tonality** if defined
+- **Project-specific references** uploaded to the project
+
+This means you don't have to re-explain your campaign every time you generate.
+
+## FAQ
+
+**Q: Can I move a KV from one Project to another?**
+Project-to-project asset transfer is not a standard self-serve feature. Each KV inherits project context, so moving it across projects can break that context.
+
+**Q: How many Projects can I have?**
+There's no practical limit. Create as many as you need to keep campaigns organized.
+
+**Q: Can multiple team members collaborate in the same Project?**
+Yes. Project access follows your brand's permissions setup.
+
+**Q: What if I forgot to create a Project before generating?**
+Create the Project first, then start fresh inside it. KVs need project context to be properly organized.
+
+**Q: Can I duplicate a Project?**
+Duplication features depend on your workspace tier. Check with your frndOS account representative.
+
+---
+
+## Related Articles
+
+- [Setting Up Your Brand Profile (Brand DNA)](../brand-setup/brand-profile.md)
+- [Setting Your Brand's Tone of Voice](../brand-setup/tone-of-voice.md)
+- [Creating Your First Key Visual](../studio/kv-generator.md)
