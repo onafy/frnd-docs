@@ -1,37 +1,34 @@
 {
   "label": "Homepage",
-  "title": "Hello from Tina + Docusaurus!",
-  "description": "Description will go into a meta tag in <head />",
+  "title": "frndOS Help Center",
+  "description": "Panduan, tutorial, dan FAQ untuk semua modul frndOS — guides, AI-powered Q&A via AskFrnd, dan changelog selalu up-to-date.",
   "blocks": [
     {
+      "title": "Welcome to frndOS Help Center",
+      "subtitle": "Find guides, tutorials, and answers",
       "document": "docs/intro.mdx",
-      "documentLabel": "Docusaurus Tutorial - 5min ⏱️",
+      "documentLabel": "Browse Guides →",
       "_template": "hero"
     },
     {
       "items": [
         {
-          "title": "Easy to Use",
-          "description": "Docusaurus was designed from the ground up to be easily installed and         used to get your website up and running quickly.\n",
-          "image": "/img/undraw_docusaurus_mountain.svg"
+          "title": "Searchable",
+          "description": "Cari jawaban cepat lintas guides dan changelog dengan keyword apa pun — tekan ⌘K dari mana saja.",
+          "image": "/img/feature-search.svg"
         },
         {
-          "title": "Focus on What Matters",
-          "description": "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the docs directory.\n",
-          "image": "/img/undraw_docusaurus_tree.svg"
+          "title": "Bilingual",
+          "description": "Semua artikel tersedia dalam Bahasa Indonesia dan English — switch via dropdown di kanan atas.",
+          "image": "/img/feature-bilingual.svg"
         },
         {
-          "title": "Powered by React",
-          "description": "Extend or customize your website layout by reusing React. Docusaurus can         be extended while reusing the same header and footer.\n",
-          "image": "/img/undraw_docusaurus_react.svg"
+          "title": "AI-Powered",
+          "description": "Tanya AskFrnd langsung di dalam frndOS — AI assistant yang paham brand, tools, dan product usage.",
+          "image": "/img/feature-ai.svg"
         }
       ],
       "_template": "features"
-    },
-    {
-      "title": "Watch the demo",
-      "url": "https://www.youtube.com/watch?v=2bHBwM54UB8",
-      "_template": "youTubeEmbed"
     }
   ]
 }
