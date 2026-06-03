@@ -17,6 +17,24 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar logo sizing — align with title text */
+.navbar__logo {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar__brand {
+  align-items: center;
+}
+
 /* Dark mode primary */
 [data-theme='dark'] {
   --ifm-color-primary: #6dbef9;
