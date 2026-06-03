@@ -1,5 +1,5 @@
 {
   "label": "💬 AskFrnd",
   "position": 7,
-  "link": { "type": "generated-index" }
+  "link": { "type": "generated-index", "description": "Cara pakai AI assistant di dalam frndOS." }
 }
