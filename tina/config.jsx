@@ -181,6 +181,7 @@ const DocsCollection = {
         { label: "📢 Growth & Campaigns", value: "growth" },
         { label: "🤝 Collaboration", value: "collaboration" },
         { label: "📁 Projects & Workflows", value: "projects" },
+        { label: "👥 Workspace & Members", value: "workspace" },
         { label: "⚙️ Settings & Administration", value: "settings" },
       ],
     },

@@ -1,0 +1,117 @@
+---
+title: Approving Join Requests
+sidebar_position: 2
+description: When team members request to join your workspace, approve or reject their request as a workspace admin.
+---
+
+# Approving Join Requests
+
+When workspace visibility is enabled, users can search for and request to join your workspace. As an **owner** or **admin**, it's your job to approve or reject those requests.
+
+This guide covers the approval flow from the admin side.
+
+## Before You Start
+
+You need:
+- **Owner** or **Admin** role in the workspace
+- Workspace visibility set to **discoverable** (otherwise no one can find or request to join)
+
+👉 See: [Setting Workspace Visibility](./workspace-visibility)
+
+## How Join Requests Work
+
+When someone requests to join your workspace:
+
+1. They search for the workspace by name
+2. They click **Request to Join**
+3. frndOS sends a notification to you (and other admins)
+4. The user sees their request status as **Pending**
+5. You approve or reject from your notifications or workspace settings
+6. The user is added to the workspace automatically upon approval
+
+## Approving a Request
+
+### Step 1 — Open Your Notifications
+
+When a new join request comes in, you'll see a notification in frndOS showing:
+- The user's name and email
+- A "Request to Join" message
+- Action buttons to approve or reject
+
+You can also access pending requests directly from **Workspace Settings → Members → Pending Requests**.
+
+### Step 2 — Review the Request
+
+Click on the request to see details. Before approving, ask yourself:
+
+- **Do I recognize this person?** If yes, approve.
+- **Are they on the team?** Cross-check with your roster.
+- **Should they have access to this brand or that one?** Note: members get workspace-level access; brand-level granular permissions aren't currently a self-serve feature.
+
+### Step 3 — Approve or Reject
+
+- **Approve** — the user is added to the workspace immediately with the default role
+- **Reject** — the request is dismissed; the user sees their request as rejected
+
+If you're unsure who the person is and the email is unfamiliar, **reject** the request to be safe. Legitimate members can always be re-invited later.
+
+## After Approval
+
+Once approved, the new member can:
+
+- See all brands in the workspace
+- Access projects within those brands
+- Use credits from the workspace pool (if their role allows)
+
+> **Heads-up:** Default role on approval depends on workspace settings. You can change a member's role at any time from workspace settings.
+
+## Assigning the Right Role
+
+After approval, take a moment to confirm the new member has the right role:
+
+| Role | Best For |
+|---|---|
+| **Admin** | Senior team members who manage workspace settings |
+| **Editor** | Creators who produce work (designers, AMs, copywriters) |
+| **Viewer / Guest** | Clients, stakeholders, observers |
+
+For more on roles, see [Inviting Team Members](./inviting-team-members).
+
+## A Note on Brand-Level Permissions
+
+Members approved into a workspace can access **all brands within that workspace** by default. If you need to restrict a member to specific brands only, that level of granular permission is not currently a self-serve feature.
+
+If two brands need fully separated access (for example, when there's a sensitive client conflict), consider:
+
+- Creating **separate workspaces** for each brand (note: each requires its own subscription)
+- Using project-level organization with clear naming conventions
+
+This is an area frndOS is actively evolving.
+
+## FAQ
+
+**Q: I rejected a request by accident. Can the user request again?**
+Yes — rejected requests don't permanently block a user. They can request to join again, or you can invite them directly.
+
+**Q: Can other admins also approve requests, or only the owner?**
+Both **owners** and **admins** can approve. The first one to act decides the outcome.
+
+**Q: I have many pending requests. Is there a bulk approve option?**
+Check workspace settings for bulk action support. Otherwise, review each request individually — it's the safer default for security.
+
+**Q: How long does a pending request stay open?**
+Requests stay pending until approved or rejected. There's no automatic timeout, but cleaning up old pending requests periodically is good hygiene.
+
+**Q: Can I see who has access to my workspace?**
+Yes. Go to **Workspace Settings → Members** for a full list of current members, their roles, and join dates.
+
+**Q: A user I don't recognize requested to join. What should I do?**
+Reject. If they should have been invited, you (or another admin) can invite them directly via the invite flow. Direct invitations are more controllable than open join requests.
+
+---
+
+## Related Articles
+
+- [Inviting Team Members](./inviting-team-members)
+- [Setting Workspace Visibility](./workspace-visibility)
+- [Joining or Creating a Workspace](../getting-started/joining-or-creating-workspace)

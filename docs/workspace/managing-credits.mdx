@@ -1,0 +1,145 @@
+---
+title: Managing Workspace Credits
+sidebar_position: 3
+description: How credits work in frndOS — workspace pools, per-user allocation, usage tracking, and the self-serve request flow.
+---
+
+# Managing Workspace Credits
+
+frndOS uses a **credit-based system** for AI-powered features like image generation, video generation, and chat. Credits live at the **workspace level** and are allocated to individual users by admins.
+
+This guide covers both sides: how admins manage the workspace credit pool, and how members request more when they run out.
+
+## How Credits Work
+
+### The Workspace Credit Pool
+
+Every workspace has a **total credit pool** based on its subscription plan. For example, your workspace might have 22,500 credits per month.
+
+This pool is shared across all team members in the workspace — but **how it's used is controlled by per-user allocations**.
+
+### Per-User Allocation
+
+Admins set a **credit limit** for each member, drawn from the workspace pool. Think of it like a department budget:
+
+- The workspace has a total budget (e.g., 22,500 credits)
+- Each member is allocated a portion (e.g., User A gets 1,000, User B gets 500, etc.)
+- Allocations come out of the workspace pool — but the same pool can be allocated multiple times to different users
+
+> **Important:** Allocating credits to a user doesn't "subtract" them from the pool permanently. It sets a usage cap for that user, drawn from the shared pool as they actually consume credits.
+
+### How Credits Get Consumed
+
+Credits are consumed by AI actions like:
+- **KV Generator** — image generation per render
+- **Resizer** — adapting visuals across formats
+- **AskFrnd chat** — image and video generation requests
+- Other AI-powered features
+
+The exact credit cost varies by model and operation type.
+
+### What Happens on Errors
+
+If a generation **fails** (model error, network issue, unsupported aspect ratio), **credits are not consumed**. You only pay for successful outputs.
+
+## For Admins: Allocating Credits
+
+### Set or Adjust a Member's Credit Limit
+
+1. Go to **Workspace Settings → Members** (or **Credits** section)
+2. Find the user you want to allocate credits to
+3. Click **Edit** or **Allocate Credits**
+4. Enter the **credit limit** for that user
+5. Save
+
+### Real Example
+
+Your workspace has **22,500 total credits** per month.
+
+| Member | Allocation | Notes |
+|---|---|---|
+| Alice (Senior Designer) | 5,000 | Heavy KV Generator usage |
+| Bob (Account Manager) | 1,000 | Mostly chat queries |
+| Charlie (Junior Designer) | 800 | Capped while learning |
+| Dana (Client/Viewer) | 0 | View-only |
+
+In this example, you've allocated 6,800 credits across users. The remaining ~15,700 stays in the pool and can be allocated to others later (including re-allocating to existing users if they need more).
+
+### Transferring Credits Between Users
+
+Credits **can't be transferred peer-to-peer** between users. If User A wants to give some of their unused credits to User B:
+
+1. The admin **reduces User A's allocation**
+2. The admin **increases User B's allocation**
+
+Both changes come from the workspace pool. There's no direct user-to-user transfer.
+
+## For Members: Requesting More Credits
+
+If you've used up your allocation but need more, you can now **self-request credits** from your workspace admin — without chasing them on chat.
+
+### How to Request Credits
+
+1. Open the **Credits** section in your account or workspace view
+2. Click **Request Credits** (or similar)
+3. Enter:
+   - **How much** you're requesting
+   - **A note** explaining why (e.g., "Generating final assets for OCBC summer campaign")
+4. Submit
+
+Your request goes to the workspace admin as a notification.
+
+### What Happens Next
+
+- The admin reviews your request
+- If approved, your allocation is updated automatically
+- You can immediately use the additional credits
+
+> **Tip:** Adding a clear note speeds up approval. Admins are more likely to approve quickly if they understand the use case.
+
+## Tracking Credit Usage
+
+Workspace admins can see usage analytics in workspace settings:
+
+- **Per-feature usage** — how many credits were spent on KV Generator, Resize, chat, etc.
+- **Per-user usage** — which team members are heaviest consumers
+- **Time-based trends** — usage patterns over days, weeks, or months
+
+This helps you allocate the budget more accurately over time.
+
+## Best Practices
+
+**Start conservative, then expand.** Don't allocate your full pool upfront. Leave headroom for unplanned needs and new team members.
+
+**Track usage weekly during launch.** When your team is new to frndOS, usage patterns are hard to predict. Check the credit dashboard weekly for the first month.
+
+**Use viewer/guest roles to save credits.** Clients and stakeholders typically don't need generation credits — give them 0 allocation and Viewer role.
+
+**Pre-allocate before big campaigns.** If you know a big campaign is coming, bump allocations on the relevant designers in advance.
+
+## FAQ
+
+**Q: What happens when our workspace runs out of credits?**
+You can request a plan upgrade or wait for the next billing cycle when credits reset. Reach out to your frndOS account representative to top up.
+
+**Q: Do credits roll over to the next month?**
+Rollover policy depends on your subscription plan. Check your plan details for specifics.
+
+**Q: Do failed generations cost credits?**
+No. If a generation errors out, no credits are consumed.
+
+**Q: Why can't I see how many credits a specific model will cost before I generate?**
+Currently, credit cost is shown **after** generation completes. Pre-generation cost preview is a known feature request — feedback noted.
+
+**Q: I'm an admin but I don't have credits assigned to me. Can I still use AI features?**
+You may need to allocate credits to yourself just like any other member. Check workspace settings.
+
+**Q: Can I see what each team member is generating?**
+You can see **how many** credits each member is using and on which features. The actual content of their generations is private to them.
+
+---
+
+## Related Articles
+
+- [Inviting Team Members](./inviting-team-members)
+- [Joining or Creating a Workspace](../getting-started/joining-or-creating-workspace)

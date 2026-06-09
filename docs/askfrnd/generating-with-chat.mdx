@@ -1,0 +1,188 @@
+---
+title: Generating Images & Videos via AskFrnd
+sidebar_position: 2
+description: Use AskFrnd's chat-based interface to quickly generate images and videos — with model choice, custom inputs, and easy iteration.
+---
+
+# Generating Images & Videos via AskFrnd
+
+Beyond the KV Generator, you can also generate **images and videos directly from AskFrnd's chat panel**. It's the fastest way to explore visual ideas without leaving your current view.
+
+This guide covers how to use chat-based generation and how it differs from the dedicated tools in Studio.
+
+## When to Use Chat Generation vs. Studio Tools
+
+| Use AskFrnd Chat When… | Use Studio (KV Generator / Resizer) When… |
+|---|---|
+| You want a fast concept | You need brand-perfect output |
+| You're exploring ideas | You're building a final deliverable |
+| You don't need fine controls | You need bounding box edits, version history, templates |
+| You want inline conversation | You need a structured creative workflow |
+
+## Generating Images
+
+### Step 1 — Open AskFrnd
+
+Click the AskFrnd icon to open the panel from any page.
+
+### Step 2 — Choose a Model
+
+In the AskFrnd panel, you can select which **AI model** to use for generation. Different models have different strengths and credit costs.
+
+### Step 3 — Describe What You Want
+
+Type your prompt. Be specific about:
+- **Subject matter** — what's in the image
+- **Style** — photographic, illustration, minimalist, etc.
+- **Mood / tone** — bright, moody, energetic, calm
+- **Composition** — angle, framing, focus
+- **Aspect ratio or size** — landscape, portrait, square (mention in the prompt itself)
+
+> **Tip:** Because AskFrnd is conversational, the controls you'd normally see as buttons (resolution, aspect ratio, quality) are baked into your prompt. The more specific you are, the better the result.
+
+### Step 4 — Generate and Iterate
+
+Click send. The image generates inline in the conversation.
+
+- If you like it, save or download
+- If you want to refine, type a follow-up like *"make the background darker"* or *"try a square version"*
+- Each refinement is a new generation
+
+### Step 5 — Check Credit Usage
+
+After generation, you'll see how many credits were consumed for that image. (Pre-generation cost preview is a known feature request.)
+
+## Generating Videos
+
+Video generation works similarly to images, with a few differences.
+
+### Step 1 — Open AskFrnd
+
+Same as for images — open the panel.
+
+### Step 2 — Choose a Video Model
+
+Make sure you've selected a model that supports video generation. Not all models support video.
+
+### Step 3 — Describe Your Video
+
+Be specific about:
+- **Subject and action** — what's happening, who or what's moving
+- **Duration** — most models default to 5–8 seconds
+- **Style** — cinematic, animated, product reveal, etc.
+- **Camera movement** — static, pan, zoom in, etc.
+
+### Step 4 — Generate and Wait
+
+Video generation takes longer than image generation. You'll see a **loading state** while the model works.
+
+> **Heads-up:** Sometimes the loading state isn't very prominent. Be patient — give it a minute before assuming something's wrong.
+
+### Step 5 — Review Output
+
+Once complete, the video appears inline in the chat. You can:
+- Download it
+- Send it to KV Generator or Resizer for further work
+- Iterate with a refinement prompt
+
+## Working with Custom Brand Fonts
+
+If your brand uses a custom font (like Batik Telkomsel or a proprietary font), here's how to make it work in chat generation:
+
+### Current State
+
+**Brand Knowledge fonts** (the ones configured in your Brand Identity) are **currently consumed only by the KV Generator** — not yet by AskFrnd chat generation.
+
+### Workaround
+
+To use custom fonts in chat-based image or video generation:
+
+1. **Upload the font file directly** in your conversation context (where supported)
+2. Or **mention the font by name** in your prompt — works for fonts the model can find online (Google Fonts, well-known brand fonts)
+3. For very custom or proprietary fonts, you'll get more reliable results using the **KV Generator** instead
+
+This limitation is being worked on. Future updates will let Brand Knowledge flow into chat-based generation too.
+
+## Useful Patterns
+
+### Pattern 1 — Quick Concepting
+
+When you're not sure what direction to go:
+
+```
+"Give me three different visual directions for a Ramadan campaign 
+banner — warm/traditional, modern/minimal, and energetic/playful."
+```
+
+Generate, pick the best direction, then refine it in KV Generator for production.
+
+### Pattern 2 — Reference-Driven Generation
+
+If you have a reference image, attach it to your prompt and describe what you want to change:
+
+```
+[Attach reference image]
+"Generate something with this composition and lighting, but with 
+a young Indonesian family in the foreground instead."
+```
+
+### Pattern 3 — Iterative Refinement
+
+Each follow-up message refines the previous output:
+
+```
+You: "Generate a hero image for a beach vacation campaign."
+[Output]
+You: "Make the sky more dramatic."
+[Output]
+You: "Switch to a square format."
+[Output]
+```
+
+Each refinement costs credits, so be intentional with iterations.
+
+## Errors & Edge Cases
+
+### My generation failed — was I charged?
+
+No. **Failed generations don't consume credits**. You only pay for successful outputs.
+
+### The model rejected my aspect ratio
+
+Some models have aspect ratio limits. If you get an error like *"this model doesn't support that aspect ratio"*, try:
+- A more common ratio (16:9, 1:1, 9:16)
+- A different model that supports your desired format
+
+### The output doesn't match my prompt
+
+- Refine the prompt with more specific details
+- Try a different model — some are better at certain styles
+- Use the KV Generator for more controlled output
+
+## FAQ
+
+**Q: Can I see the credit cost before I generate?**
+Not currently — cost is shown after generation. Pre-generation cost preview has been flagged as a feature request.
+
+**Q: Can I send a generated image directly to KV Generator?**
+The cross-tool handoff is being developed. For now, save the image and re-upload it in the KV Generator when needed.
+
+**Q: What's the maximum video duration?**
+Depends on the model — typically 5–8 seconds. The model documentation in the AskFrnd panel will show the limits.
+
+**Q: My video generation is taking forever — should I cancel?**
+Video generation is slower than image generation. Give it a couple of minutes. If it stays stuck, refresh the page or check the model's known issues.
+
+**Q: Can I make commercial-quality output via chat alone?**
+For final commercial assets, the **KV Generator** is the recommended tool. Chat is for exploration; KV Generator is for production.
+
+**Q: Does Brand Knowledge apply to chat-based generation?**
+Not fully yet. Brand Identity (fonts, colors) is currently only consumed by the KV Generator. Brand DNA and tonality context partially flow into chat — but for guaranteed brand consistency, use the KV Generator.
+
+---
+
+## Related Articles
+
+- [AskFrnd Overview](./overview)
+- [Creating Your First Key Visual (KV Generator)](../studio/kv-generator)
+- [Managing Workspace Credits](../workspace/managing-credits)

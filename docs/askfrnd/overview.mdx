@@ -1,16 +1,120 @@
 ---
-title: What is AskFrnd & What Can It Do?
-description: The AI assistant inside frndOS — understands your brand context, tools, and product usage.
+title: AskFrnd Overview
 sidebar_position: 1
+description: AskFrnd is your AI assistant inside frndOS — context-aware, available across every pillar, and built to help you create, analyze, and explore.
 ---
 
-# AskFrnd
+# AskFrnd Overview
 
-AskFrnd is the AI assistant inside frndOS. Ask anything — about your brand, the tools, or how to use frndOS features.
+**AskFrnd** is your AI assistant in frndOS. It's not a separate tool — it's a persistent panel you can open anywhere in the platform to ask questions, generate visuals, or get analysis.
 
-## Articles in this category
+If you used the old standalone chat page in v1, AskFrnd is what replaces it — and it's smarter, more accessible, and aware of where you are.
 
-- **Asking frnd About Your Brand**
-- **Using AskFrnd for Creative Ideas**
+## Where to Find AskFrnd
 
-[Placeholder — to be written by content author via TinaCMS]
+AskFrnd lives as a **panel on the right side** of every page. Click the **AskFrnd icon** (or use the keyboard shortcut, if available) to open the panel from any view.
+
+The panel stays available no matter which pillar you're in — Home, Insights, Studio, or Research.
+
+## What Makes AskFrnd Different
+
+### It Knows Where You Are
+
+AskFrnd is **context-aware**. When you open the panel from inside the Insights dashboard, it knows you're looking at Insights data. When you open it from Studio, it understands you're in a creative context.
+
+This means:
+- **From Insights** → AskFrnd can analyze your dashboard data ("what are my top 3 posts?", "why did this campaign outperform that one?")
+- **From Studio** → AskFrnd can help with creative ideation, image generation, or video generation
+- **From Home** → AskFrnd works as a general-purpose assistant across your brand and projects
+
+> **In short:** ask the same question from different places, get more relevant answers.
+
+### Conversation History
+
+AskFrnd **saves your chat history**. You can browse past conversations from the panel, pick up where you left off, or reference previous Q&As when you need them.
+
+### Model Choice
+
+You can choose which **AI model** powers your conversation. Different models have different strengths — some are faster, some are better for visual generation, some are better for analysis. AskFrnd shows the available models in the panel; pick the one that fits your task.
+
+> **Tip:** Credit cost can vary by model. See [Managing Workspace Credits](../workspace/managing-credits) for how credits work.
+
+## What You Can Do with AskFrnd
+
+AskFrnd is a general-purpose AI surface inside frndOS. Common uses include:
+
+### 💬 Ask Questions About Your Data
+*"What were my top 3 posts last month?"*
+*"Why did the summer campaign perform better than the winter one?"*
+*"Show me the engagement breakdown for owned media in Q1."*
+
+### 🎨 Generate Images
+*"Create a banner for a back-to-school promo, vertical format, bright and energetic."*
+
+👉 See: [Generating Images & Videos via AskFrnd](./generating-with-chat)
+
+### 🎬 Generate Videos
+*"Make a 5-second product reveal video, clean white background."*
+
+### 💡 Brainstorm Ideas
+*"Give me 10 social caption ideas for a Ramadan campaign for a youth banking brand."*
+
+### 📋 Get Help with Workflow
+*"How do I tag a post with multiple labels?"*
+*"What's the best way to set up a new project for a client?"*
+
+## AskFrnd vs. KV Generator
+
+A common question: when should you use AskFrnd's image generation vs. opening the KV Generator?
+
+| Use AskFrnd Chat When… | Use KV Generator When… |
+|---|---|
+| You want a quick concept or exploration | You're building a finalized Key Visual |
+| You don't need fine canvas controls | You need bounding box edits, layers, or templates |
+| You're chatting and want to generate inline | You need version history and craft refinement |
+| You want flexibility in prompting | You want repeatable, brand-aware production |
+
+Think of AskFrnd as the **sketchpad** and KV Generator as the **studio**. Both are valid; they're built for different moments.
+
+## What AskFrnd Knows About Your Brand
+
+AskFrnd has access to:
+- Your **active brand** (whichever brand is selected in the top-left)
+- The **current page context** (which pillar, which data, which view)
+- Your **conversation history** in that session
+
+> **Heads-up:** Brand Knowledge (DNA, Identity, Tonality) is currently **only fully consumed by the KV Generator**, not yet by AskFrnd's chat-based generation. This is being worked on. For now, if you need brand-perfect output, use the KV Generator or include brand specifics in your prompt.
+
+## Privacy & History
+
+- Your AskFrnd conversations are stored in your account
+- Workspace admins can see usage analytics (how many credits, which features), but **not the content** of your conversations
+- You can review your own history at any time from the AskFrnd panel
+
+## FAQ
+
+**Q: Is AskFrnd the same as the old chat in frndOS v1?**
+It evolved from that, yes — but it's redesigned. The biggest changes: it's now a persistent panel (not a separate page), and it's context-aware based on which pillar you're using.
+
+**Q: How much does AskFrnd cost in credits?**
+Credit cost depends on the model and the type of action. Image and video generation cost more than text-only conversation. Cost is shown **after** generation completes.
+
+**Q: Can AskFrnd see my campaign data?**
+Yes, when you open AskFrnd from inside the Insights pillar — it can analyze the campaign and post data visible in your dashboards.
+
+**Q: Can I switch models mid-conversation?**
+Check the model selector in the AskFrnd panel. Behavior may vary based on the specific implementation.
+
+**Q: My AskFrnd panel is gone — where did it go?**
+The panel is collapsible. Look for the AskFrnd icon on the right side of the screen to reopen it.
+
+**Q: Can AskFrnd use custom brand fonts in generated visuals?**
+Not yet — Brand Knowledge fonts are currently only used by the KV Generator. For chat-based generation, you can upload custom fonts directly into your prompt or context.
+
+---
+
+## Related Articles
+
+- [Generating Images & Videos via AskFrnd](./generating-with-chat)
+- [Studio Overview](../studio/overview)
+- [Insights Overview](../insights/overview)
